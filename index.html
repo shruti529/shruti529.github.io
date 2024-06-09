@@ -1,2 +1,43 @@
 
 <h1 style="font-size: 50px; color: #134e7b; text-align: center;">Welcome to <i> Shruti's </i> blog! </h1>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Software Engineering</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Data Engineering</a>
+  </div>
+</div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Data modeling</h1>
+      <h3>Kimball STAR schema</h3>
+      <p>Kimball STAR schema has FACT and Dimension tables. </p>
+      <h4>FACT tables</h4>
+      <ul>
+        <li>FACT  tables represent business events.</li>
+        <li>FACT tables are normalized.</li>
+        <li>FACT tables have only numbers and foreign keys to dimension tables.  </li>
+        <li>They don’t reference other FACT tables.</li>
+        <li>FACT tables are immutable and append-only.</li>
+        <li>FACT tables are typically narrow and long. They don’t have as many columns but they have a lot of rows.</li>
+        <li>FACT table rows have a 1:1 relationship to events. Atomic grain refers to lowest level at which data is captured by a business process. [Atomic grains are recommended because data can be rolled up for summary grains but not vice-versa.]</li>       
+      </ul>
+      <h4>Dimension tables</h4>
+      <ul>
+        <li>Dimension tables provide reference data, context and attributes for events stored in FACT tables.</li>
+        <li>Dimension tables are wide and short.</li>
+        <li>Dimension tables are denormlized. They can contain duplicated data.</li>
+        <li>Dimension tables describe the who, what, where, when, why and how of the events.</li>           
+      </ul>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
